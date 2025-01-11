@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+nav {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    margin: 0;
+    font-weight: 800;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+ul > li {
+    list-style: none;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+ul > li:hover {
+    color: #4CAF50;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.intro-text {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.passwords-section, .form-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background: #4CAF50;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #45a049;
+    transform: translateY(-1px);
+}
+
+.btnsm {
+    padding: 0.5rem 1rem;
+    background: #dc3545;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnsm:hover {
+    background: #c82333;
+}
+
+img.copy-icon {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin-left: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+img.copy-icon:hover {
+    transform: scale(1.1);
+}
+
+#alert {
+    display: none;
+    background: #4CAF50;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.password-requirements {
+    color: #666;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    nav {
+        padding: 0.8rem 1rem;
+    }
+    
+    .passwords-section, .form-section {
+        padding: 1.5rem;
+    }
+}
